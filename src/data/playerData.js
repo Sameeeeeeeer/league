@@ -1,4 +1,4 @@
-export default playerData = [
+const playerData = [
   {
     id: 1,
     name: "Mohamed Sameer",
@@ -156,7 +156,7 @@ export default playerData = [
     isPro: true,
   },
   {
-    id: 7
+    id: 7,
     name: "Waheed",
     nickname: "Wadde",
     position: "Forward",
@@ -182,3 +182,5 @@ export default playerData = [
     isPro: true,
   },
 ];
+
+export default playerData;

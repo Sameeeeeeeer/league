@@ -1,9 +1,13 @@
-import './App.css';
+import "./App.css";
+import Playerlist from "./components/playerList";
+
 
 function App() {
+  
   return (
     <div className="App">
-     hello
+      hello
+      <Playerlist />
     </div>
   );
 }
