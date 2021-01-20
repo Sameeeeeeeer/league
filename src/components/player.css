@@ -1,18 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .playerContainer {
+  font-family: "Exo 2", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 1200px;
-  background-color: aquamarine;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
 }
 
-.playerCard {
-  background-color: rgb(221, 221, 221);
-  width: 160px;
-  height: 200px;
-  padding: 20px;
+.player-card {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  color: #e2ac6b;
+  width: 175px;
+  height: 250px;
   margin: 10px;
+  padding: 10px;
   border-radius: 20px;
+  z-index: 2;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.player-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+  cursor: pointer;
+  transform: scale(1.02, 1.02);
+  background-color: rgb(41, 13, 13);
+}
+
+.card-top {
+  position: relative;
+  display: flex;
+  padding: 0 0.6rem;
+}
+
+.master-info {
+  position: absolute;
+  line-height: 1.4rem;
+  font-weight: 300;
+  padding: 0.2rem;
+  text-transform: uppercase;
+}
+
+.player-rating {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.player-pos {
+  font-size: 0.8rem;
+}
+
+.player-picture {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.profilepic {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  right: -1.5rem;
+  bottom: 0;
+}
+
+.player-card-bottom {
+  position: relative;
+}
+
+.player-info {
+  display: block;
+  padding: 0.3rem 0;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.player-name {
+  width: 100%;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  font-size: 1.1rem;
+  border-bottom: 2px solid rgba(182, 182, 182, 0.1);
+  padding-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.player-features {
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.player-features-col {
+  border-right: 2px solid rgba(182, 182, 182, 0.1);
+  padding: 0 1rem;
+}
+
+.player-features span {
+  display: flex;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.player-feature-value {
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+.player-feature-title {
+  font-weight: 400;
+}
+
+.player-features-col:last-child {
+  border: 0;
 }
