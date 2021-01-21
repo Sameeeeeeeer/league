@@ -1,3 +1,6 @@
+import img_dude from "../image/img_dude.png";
+import img_valdez from "../image/img_valdez.png";
+
 const playerData = [
   {
     id: 1,
@@ -28,7 +31,7 @@ const playerData = [
   },
   {
     id: 2,
-    img: "https://selimdoyranli.com/cdn/fut-player-card/img/messi.png",
+    img: img_dude,
     name: "Mohamed Abdul Wadood",
     nickname: "Dude",
     position: "DEF",
@@ -55,17 +58,17 @@ const playerData = [
   },
   {
     id: 3,
-    img: "https://selimdoyranli.com/cdn/fut-player-card/img/messi.png",
+    img: img_valdez,
     name: "Ibrahim Waleed",
     nickname: "Valdez",
     position: "DEF",
     jerseyNo: 2,
     ability: {
       shooting: 85,
-      passing: 80,
-      dribbling: 70,
+      passing: 75,
+      dribbling: 80,
       defense: 90,
-      teamwork: 85,
+      teamwork: 82,
       workrate: 80,
       gk: 90,
     },
